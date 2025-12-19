@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Ímpar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Optimized Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Quintessential&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script>
+</head>
+
+<body>
+
+    <div class="background">
+        <header class="header">
+            <ul>
+                <li>HOME</li>
+                <li><a target="_blank" href="./imagensimpar/valores.png">VALORES</a></li>
+                <li><a target="_blank" href="https://share.google/64D36aM1aAYOCRyFS">LOCALIZAÇÃO</a></li>
+            </ul>
+            <button><a id="contatoheader" target="_blank" href="https://wa.me/554891448517">CONTATO</a><span
+                    class="material-symbols-outlined">north_east</span>
+            </button>
+            <div class="email">
+                <a target="_blank"
+                    href="https://mail.google.com/mail/?view=cm&to=leonardodemouraveiga@gmail.com&su=Assunto&body=Mensagem">
+                    <img src="./imagensimpar/eemail.png" alt="email">
+                </a>
+            </div>
+        </header>
+        <main>
+            <section class="hero reveal">
+                <img class="casalbg" src="/imagensimpar/casalbgAAA.png" alt="casalfoto">
+                <img class="hero-bg" src="/imagensimpar/letsgobg.png" alt="background">
+                <div class="divesquerda">
+                    <aside class="asideesquerda">
+                        <div class="espetaculo" data-toggle>ESPETÁCULO: DIVAS E GIGANTES</div>
+                        <div class="amostra">
+                            <p><span style="font-weight: bold;">DIVAS E GIGANTES DA MÚSICA:</span>
+                                <br>Performances
+                                impactantes, emocionantes e inesquecíveis!
+                                Venha celebrar a dança com a gente!
+                            </p>
+                            <img src="./imagensimpar/espetwebp.webp" alt="20DEZ">
+                            <p><a href="#">CRONOGRAMA</a></p>
+                            <p>Valores e ingressos neste link: <a target="_blank"
+                                    href="https://www.sympla.com.br/evento/espetaculo-de-danca-divas-e-gigantes-dance-impar/3067126?_gl=1*15k0ovc*_gcl_au*NDIwNzAyNDAuMTc1Njg1MjAyMQ..*_ga*NDI2MjczNTc3LjE3NTY4NTIwMjM.*_ga_KXH10SQTZF*czE3NTg1NTIyNjEkbzckZzEkdDE3NTg1NTIzMDQkajE3JGwwJGg1MDI1NTU4MzM.">Ingressos</a>
+                            </p>
+                        </div>
+                        <div class="eventos" data-toggle>EVENTOS</div>
+                        <div class="eventosimg">
+                            <img src=".//imagensimpar/eventosimpar.png" alt="agendaimpar">
+                        </div>
+                        <div class="local">
+                            <button class="btnHorarios" id="btnHorarios">HORÁRIOS</button>
+                            <div class="dias" id="dias">
+                                <div class="dia-semana">
+                                    <h3>SEGUNDA-FEIRA</h3>
+                                    <ol>
+                                        <li>08h00 – Ballet Adulto Intermediário – Letícia Galloti
+                                        </li>
+                                        <li>08h30 – Jazz Iniciante – Mirian Tanabe
+                                        </li>
+                                        <li>17h30 – Ballet Adulto Intermediário – Juliana Figueredo
+                                        </li>
+                                        <li>17h30 – Heels – Leonardo Veiga
+                                        </li>
+                                        <li>​17h30 – Jazz infantil – Flávia Zardo
+                                        </li>
+                                        <li>18h30 – Jazz Master 50+ – Andressa Lobato
+                                        </li>
+                                        <li>18h30 – K-Pop – Daniela Trombeta
+                                        </li>
+                                        <li>​18h30 – Hip Hop Iniciante – PH
+                                        </li>
+                                        <li>19h30 – Jazz Adulto Intermediário – Julia Bocchi
+                                        </li>
+                                        <li>19h30 – Dança de Salão – Forró Iniciante – Ed Charlles e Carol Hinckel
+                                        </li>
+                                        <li>19h30 – Dança de Salão – Samba e Forró Iniciante – André Felipe e Samantha
+                                            Gomes
+                                        </li>
+                                        <li>20h30 – Jazz Adulto Avançado – Andressa Lobato
+                                        </li>
+                                        <li>20h30 – Dança de Salão – Samba e Forró Iniciante – Ed Charlles e Carol
+                                            Hinckel
+                                        </li>
+                                        <li>20h30 – Dança de Salão – Samba e Forró Intermediário – André Felipe e
+                                            Samantha Gomes
+                                        </li>
+                                        <li>21h30 – Dança de Salão – Salsa e Bachata Iniciante – Ed Charlles e Carol
+                                            Hinckel
+                                        </li>
+                                        <li>21h30 – Jazz Funk – Iniciante – Pri Ciotta
+                                        </li>
+                                        <li>21h30 – Dança de Salão – Forró Studio Coreográfico – André Felipe e Samantha
+                                            Gomes
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="dia-semana">
+                                    <h3>TERÇA-FEIRA</h3>
+
+                                    <ol>
+                                        <li>08h00 – Ballet Adulto/Juvenil – Gabi Piediak
+                                        </li>
+                                        <li>08h30 – Ballet Baby (3 à 7 anos) – Mirian Tanabe
+                                        </li>
+                                        <li>09h00 – Yoga – Lari Lima
+                                        </li>
+                                        <li>10h15 – Aerial Yoga – Lari Lima
+                                        </li>
+                                        <li>11h00 – Dança Contemporânea – Fabiana
+                                        </li>
+                                        <li>17h30 – Hip Hop Juvenil – PH
+                                        </li>
+                                        <li>17h30 – Ballet Adulto Iniciante – Juliana Figueredo
+                                        </li>
+                                        <li>17h30 – Dança Cigana – Ana Olivera
+                                        </li>
+                                        <li>18h30 – Hip Hop Intermediário – PH
+                                        </li>
+
+                                        <li>18h30 – Femme Style – Guadi Da Silva
+                                        </li>
+                                        <li>18h30 – Dança de Salão – Forró Iniciante – Ed Charlles e Livia Vèras
+                                        </li>
+                                        <li>19h30 – Jazz Funk – Pri Ciotta
+                                        </li>
+                                        <li>19h30 – Dança de Salão – Salsa e Bachata Intermediário – Ed Charlles e Carol
+                                            Hinckel
+                                        </li>
+                                        <li>19h30 – Dança de Salão – Zouk Iniciante – Livia Vèras e Mariana Amante
+                                        </li>
+                                        <li>20h30 – Ballet Adulto Iniciante – Gabi Piediak
+                                        </li>
+                                        <li>20h30 – Dança de Salão – Vanera Sertaneja e Sertanejo Iniciante – Felipe
+                                            Neves e Pri Ciotta
+                                        </li>
+                                        <li>20h30 – Dança de Salão – Zouk Intermediário – Livia Vèras e Mariana Amante
+                                        </li>
+                                        <li>21h30 – Ballet Adulto Avançado – Técnica de ponta – Gabi Piediak
+                                        </li>
+                                        <li>21h30 – Dança de Salão – Vanera Sertaneja e Sertanejo Intermediário – Felipe
+                                            Neves e Pri Ciotta
+                                        </li>
+                                        <li>21h30 – Dança de Salão – Lambada Iniciante – Livia Vèras e Mariana Amante
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="dia-semana">
+                                    <h3>QUARTA-FEIRA</h3>
+
+                                    <ol>
+                                        <li>08h00 – Ballet Adulto Intermediário – Letícia Galloti
+                                        </li>
+                                        <li>08h30 – Jazz Iniciante – Mirian Tanabe
+                                        </li>
+                                        <li>09h30 – Ballet Adulto Iniciante – Mirian Tanabe
+                                        </li>
+                                        <li>​09h30 – FitDance – Professora Paula Oliveira
+                                        </li>
+                                        <li>17h30 – Ballet Adulto Intermediário – Juliana Figueredo
+                                        </li>
+                                        <li>17h30 – Jazz Juvenil – Igor Roberto
+                                        </li>
+                                        <li>18h30 – Jazz – Intermediário – Igor Roberto
+                                        </li>
+                                        <li>18h30 – Dança de Salão – Zouk Iniciante – Anderson Dan e Alana
+                                        </li>
+                                        <li>18h30 – Dança de Salão – Samba e Forró Iniciante – André Felipe e Samantha
+                                        </li>
+                                        <li>19h30 – Jazz Adulto Intermediário – Andressa Lobato
+                                        </li>
+                                        <li>19h30 – Dança de Salão – Zouk Intermediário – Anderson Dan e Alana
+                                        </li>
+                                        <li>19h30 – Dança de Salão – Forró Intermediário – André Felipe e Milla Rayssa
+                                        </li>
+                                        <li>20h30 – Jazz - Iniciante – Andressa Lobato
+                                        </li>
+                                        <li>20h30 – Dança de Salão – Tango Intermediário – Gabriel Ferreira e Claudia
+                                            Margarida
+                                        </li>
+                                        <li>20h30 – Dança de Salão – Samba Avançado – André Felipe e Samantha Gomes
+                                        </li>
+                                        <li>21h30 – Dança de Salão – Tango Avançado – Gabriel Ferreira e Claudia
+                                            Margarida
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="dia-semana">
+                                    <h3>QUINTA-FEIRA</h3>
+
+                                    <ol>
+                                        <li>08h00 – Ballet Adulto/Juvenil – Gabi Piediak
+                                        </li>
+                                        <li>09h00 – Yoga – Lari Lima
+                                        </li>
+                                        <li>10h15 – Aerial Yoga – Lari Lima
+                                        </li>
+                                        <li>17h30 – Ballet Adulto Iniciante – Juliana Figueredo
+                                        </li>
+                                        <li>17h30 – K-Pop Infanto Juvenil – Daniela Trombeta
+                                        </li>
+                                        <li>17h30 – Dança Contemporânea – Fabiana
+                                        </li>
+                                        <li>18h30 – FitDance – Guadi Da Silva
+                                        </li>
+                                        <li>18h30 – Dança de Salão – Forró Iniciante – Ronaldo Rodrigues e Camila Lima
+                                        </li>
+                                        <li>18h30 – K-Pop – Daniela Trombeta
+                                        </li>
+                                        <li>19h30 – Dança de Salão – Tango e Bolero Iniciante – Ronaldo Rodrigues e
+                                            Camila Lima
+                                        </li>
+                                        <li>19h30 – Dança de Salão – Samba Iniciante – André Felipe e Malú Rocha
+                                        </li>
+                                        <li>19h30 – Jazz – Iniciante – Mirian Tanabe
+                                        </li>
+                                        <li>20h30 – Dança do Ventre – Intermediário – Ellen Pereira
+                                        </li>
+                                        <li>20h30 – Dança de Salão – Forró Intermediário – Ronaldo Rodrigues
+                                        </li>
+                                        <li>20h30 – Dança de Salão – Forró Iniciante – Felipe Neves e Camila Lima
+                                        </li>
+                                        <li>21h30 – Dança de Salão – Rock Studio Coreográfico(Liny Hop) – Ronaldo
+                                            Rodrigues
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="dia-semana">
+                                    <h3>SEXTA-FEIRA</h3>
+
+                                    <ol>
+                                        <li>​17h30 – FitDance – Ana Olivera
+                                        </li>
+                                        <li>17h30 – Hip Hop Iniciante – PH
+                                        </li>
+                                        <li>18h30 – Femme Style – Guadi Da Silva
+                                        </li>
+                                        <li>​18h30 – Hip Hop Intermediário – PH
+                                        </li>
+                                        <li>19h30 – Jazz Funk – Pri Ciotta
+                                        </li>
+                                        <li>19h30 – Dança de Salão – Samba e Forró Iniciante – André Felipe e Milla
+                                            Raysa
+                                        </li>
+                                        <li>19h30 – Dança do Ventre – Aida Gamal
+                                        </li>
+                                        <li>20h30 – Dança de Salão – Zouk Intermediário – Anderson Dan e Alana
+                                        </li>
+                                        <li>​20h30 – Ballet Adulto Avançado – Técnica de Ponta – Gabi Piediak
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="dia-semana">
+                                    <h3>SÁBADO</h3>
+
+                                    <ol>
+                                        <li>10h00 – Dança de Salão – Samba, Forró e Sertanejo Intermediário – André
+                                            Felipe e Beatriz Sodré
+                                        </li>
+                                        <li>11h00 – Dança de Salão – Samba, Forró e Sertanejo Iniciante – André Felipe e
+                                            Déia
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="ladoalado">
+                                    <button id="prevDia">&larr; Anterior</button>
+                                    <button id="nextDia">Próximo &rarr;</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </aside>
+                </div>
+                <div class="containerdivtitulo">
+                    <div class="divTitulo">
+                        <h1 class="titulo">
+                            <span class="DANCE">DANCE</span>
+                            <span class="IMPAR">ÍMPAR</span>
+                        </h1>
+                        <p class="paragrafo">STUDIO DE DANÇA</p>
+                        <!-- USAR AS LINHAS COM ::BEFORE E ::AFTER -->
+                    </div>
+                </div>
+                <div>
+            </section>
+            <section class="Offer reveal">
+                <p id="pesquerda">VOCÊ PODE APRENDER</p>
+                <img id="setaaprender" width="40px" height="auto"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVR4nO3ZISyFURQH8DsjmGKCIAiCIggmEUSBKCimyDbFFJM1m6IqFIlEstlrNkWxeVEwE5jv/7/nPDv2vWcTefPsveec33b7vf+de7773ZtSCCGEEEIIIYQQQodS8sDM+pJXSpqQ52Y2mLwGoOUA7kiOJ7cBsF4JTwrMJa8BaBkCkDOwmrwGoF9bYs/MepLbAFivhhMzG0heA9BGJdxYUYwmtwGw3hwfRGQ6eQ1AG9sBtZyXU6cwsz4zGwIwlnOelKKYUWC+lvNSBtaE3BByW4Hd8rQnwLEAZ0peKnCt5L2Qjz8N4DOEdyG3fjvxfnt7G8k5T4jIlBTFrJKLtaJYEXJdyE0FdsouLOShAKdCXih5pcBtvRyB52Ym3uohwFG5jqYXr22c9B+Mir2+DnsOwJSslpXsOQAT4EXJBbcBaCOEWtm/IoDv6P9cvOstUPXcBCtNfwaT94NQK3XtUbjTdO3PUKv8aPGuf4fh+EJEXF+JwemlqHi+FhfXDyNw/DQmzh9H982st93zCCGEEEIIIYQQQup6H6VeDQxhXiVtAAAAAElFTkSuQmCC"
+                    alt="right">
+                <div class="cardsContainer">
+                    <div class="salao card">
+                        <!-- <p>DANÇA <br>DE<br> SALÃO</p> -->
+                    </div>
+                    <div class="hiphop card">
+                        <!-- <p>HIPHOP</p> -->
+                    </div>
+                    <div class="salsa card">
+                        <!-- <p>SALSA</p> -->
+                    </div>
+                    <div class="heels card">
+                        <!-- <p>HEELS</p> -->
+                    </div>
+                    <div class="tango card">
+                        <!-- <p>TANGO</p> -->
+                    </div>
+                    <div class="forro card">
+                        <!-- <p>FORRÓ</p> -->
+                    </div>
+                    <div class="jazz card">
+                        <!-- <p>JAZZ DANCE</p> -->
+                    </div>
+                    <div class="kpop card">
+                        <!-- <p>KPOP</p> -->
+                    </div>
+                </div>
+                <p id="pdireita">E MAIS</p>
+
+            </section>
+            <div class="divButton">
+                <button id="modalidades" data-toggle>MODALIDADES <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEZ0lEQVR4nO2ZX4wdUxzHx59qEEWQiD+tVEmEl2YrHnggUQ1F/H+SiIggvDZtvLSJNB7wIiEVIihvEmRF7BabKqFohGgbNqKW7fb+frMzv9/sro0qXzln5v6ZmTNz7324c+fhnmRy997zm7PzOb//ZzxvNEZjNIY+QHo7SL8B66L9JN1cKMt6J1jmQPoHSG/1agXBitzlgEFD1oF1oUNmxqvLAOm3BSD7U3LAqSD5OiOjXl0GSKMCkCglx/pMXkYO1sb+e9EIGtENIDnhkPu4OgjXQ3J0V4fM5gKQ2+x8EJwN1t/c68ir9bJ/A0O63zqy+Uwgkrm33RBqrh21sv/cfcDJ8MN7wPJlCQRA0SO10khLfnb2DLA8Adbpgof/IfW9IZuqAim1/5bc0egCsGwFy9Hi3ZefQPJG6jc/uqoSkB7s/0qQ7gLLcrkJySFQuB6kYRrEX1UZiBMuDqfvg+TfUgCWL9AI74szuox3zP0K1juGB+DLLbnsnN/94yB9BywbMIPTQbIdLH8lYMsmUpnfhwihD4Hkv5LdZ7DuBC9d1C4O7c4358dxTNYODaAFQnqkiybetHK/YCVY3wXLPpA8b03L9y/x6jAAnNSDQ//d0gawwqvrAOlkuWPba6eVBU4xpYn924RlUgXrAbCMDZvD9BKbuoKQzoPkA5AKWF+x95Hc3zF/pBbaSqrgblppmtrhZAMuzyTBu4fN0YxEvYGwLth75ubOzES3D2vi9PpdbxqJuz+E4TkZTZ3A/Pylw2YxSfGpHk3rkJWfX7jGMff0cCGCYHVpYZjWyK4YXK9zzE8b7Q4HgvmsXBleeoU3tXoTklnH/I3VQ5i8YMJqzxFLp9KbIC84zOut6kFYX+wj7PrNmgqN6PoEZINDdqmZNCuCkCf7gmg//JhtldsZ/uf8PfJ4dSCmeTJ9RXdz+qStCVnX8ouGPhyD6A4H+FcVAITrwXJt67svG8Hyeryzsmx3m+Rg3CGmHRck73UATrY3RJ1Jc3AQc+FlNsyS/APSZ/ttSePGqiMBNhYvTH6fymhxcnAQIufaHjvrmCS7MRudnzoxMXUUyQMIgjUZkJecVXEQrAbpp8mp5YT5PhgI2xTJXrcfyGtWBlgB0s865r43uSK1ju0UU/cuN/NKNXWU2XU3xF4Ap1k56xMdc75szK3FusURDCYGTxE76HMFIfWwMbf4AWVbBnDcvVb4qGMz9g0eguWxwrxAeoWVaYT3po5/bBW7cLVzPdOn59c7UMEBnOPI3/bgcVi1yc04aNpUXi5c05ebXZr1BgYRlw6Ljn9qjn0ejB9q6WKQ/JmBiJohtWDdMYeP/D4YiGOyFixUYFLbYwh/FVh+7LefyLW3sY/wYEBI9xRA7G72CvH5VG5nZ7qdFEL1PMfaSxW++5DPTS4pl4lNrnTt+MXn8Wwu8SrSyHRn5nbKmFOUTPIrWX+iknIEQbDGHrrZXZePXAcCLRlbouhUPyVFUo7sSV5HDK4cGY3RGA3PjP8BuhnuKRBzouMAAAAASUVORK5CYII="
+                        alt="tango"></button>
+                <div class="listaModalidades">
+                    <ul>
+                        <li>BALLET</li>
+                        <li>DANÇAS DE SALÃO</li>
+                        <li>HIP HOP</li>
+                        <li>HEELS</li>
+                        <li>JAZZ</li>
+                        <li>DANÇAS URBANAS</li>
+                        <li>YOGA</li>
+                        <li>AERIAL YOGA</li>
+                        <li>DANÇA DO VENTRE</li>
+                        <li>FEMME STYLE</li>
+                        <li>JAZFUNK</li>
+                        <li>K-POP</li>
+                        <li>FUNK</li>
+                        <li>DANÇA CONTEMPORÂNEA</li>
+                        <li>FITDANCE</li>
+                    </ul>
+                </div>
+                <img id="logomiddle" src="./imagensimpar/bgbgbg.webp" alt="">
+                <button id="reserva" data-toggle><a id="contatoheader" target="_blank"
+                        href="https://wa.me/554891448517">RESERVAR
+                        MEU HORÁRIO</a>
+                    <div class="icons8-whatsapp"></div><img src="./imagensimpar/whatsappppp.png" alt="">
+                </button>
+                <div class="aviso">
+                    <p>VOCÊ SERÁ DIRECIONADO AO WHATSAPP DA ESCOLA</p>
+                </div>
+            </div>
+            <div class="sobre reveal">
+                <h2>SOBRE A DANCE ÍMPAR</h2>
+                <p>A Dance ÍmPar é um espaço diferenciado que conta com uma equipe de profissionais extremamente
+                    qualificados e dispostos a
+                    compartilhar a diversão de se dançar.<br>
+                    Professores participantes da Dança dos Famosos (Rede Globo), com formação em Educação Física
+                    e Dança
+                    formam a equipe que
+                    traz à Florianópolis um novo conceito na forma de se aprender a dançar.
+                </p>
+            </div>
+            <div class="fotos reveal">
+                <div>
+                    <!-- <p>DANCE</p> -->
+                    <img src="./imagensimpar/contrastimpar.webp" width="900" height="460" alt="">
+                    <!-- <p>ÍMPAR</p> -->
+                </div>
+            </div>
+
+
+            <section class="CTA reveal">
+                <div class="vantagens">
+                    <div class="particulares">
+                        <h3>Aulas Particulares</h3>
+                        <p>Além de receber toda a privacidade e exclusividade nas aulas, otimize seu tempo e
+                            aprendizado
+                            com as nossas aulas
+                            particulares. Horários e pacotes flexíveis com suas necessidades.</p>
+                        <div class="duplaimgp">
+                            <img src="./imagensimpar/dancadois.webp" width="500px" height="350px" alt="">
+                            <p>Nas aulas particulares você e o seu professor tem mais flexibilidade de horários,
+                                podendo
+                                agendar aulas conforme a disponibilidade de ambos.<br><br>
+                                Perceba a sua evolução com os feedbacks do professor e com sua propriocepção.
+                                Agende
+                                agora sua aula experimental!</p>
+                        </div>
+                        <a class="ctaparticular" target="_blank" href="https://wa.me/554891448517">RESERVAR <img
+                                src="./imagensimpar/rright.png" alt=""></a>
+                    </div> <!--Fechamento da div particulares -->
+                </div> <!--Fechamento da div vantagens -->
+            </section>
+
+
+            <section class="aver">
+
+                <div class="personalizadas">
+                    <div class="hp">
+                        <h4>COREOGRAFIAS PERSONALIZADAS</h4>
+                        <p>Coreografias personalizadas para casamentos e festas. Você pode coreografar a sua
+                            música,
+                            dançar uma valsa ou até mesmo
+                            solicitar uma assessoria ao profissional que irá auxiliar em todo o processo.<br>
+                            Tudo é
+                            pensado
+                            e preparado conforme seu
+                            gosto e necessidade, deixando esse momento ainda mais especial para você.</p>
+                        <img src="./imagensimpar/dentroescola.jpg" alt="">
+                    </div>
+                    <aside>
+                        <div>
+                            <img src="./imagensimpar/jazzwoman.webp" width="311px" height="auto" alt="">
+                        </div>
+                    </aside>
+                </div>
+                <div class="nossoespaco">
+                    <div class="left">
+                        <h5>
+                            FAÇA SEU EVENTO EM NOSSO ESPAÇO!
+                        </h5>
+                        <p>Disponibilizamos nosso espaço para locação, entre em contato conosco e reserve nossas
+                            salas
+                            para o seu evento!</p>
+                        <ol>
+                            <li>Festas de aniversário</li>
+                            <li>Cursos</li>
+                            <li>Seminários</li>
+                            <li>Confraternizações de empresas</li>
+                            <li>Eventos de Dança</li>
+                        </ol>
+                    </div>
+                    <div class="right">
+                        <img src="./imagensimpar/escolaopaci001.jpg" alt="">
+                    </div>
+
+                </div>
+                <aside class="segundoaside">
+                    <h6>EM BREVE!</h6>
+                    <p>Novas turmas para 2026! Aguarde os novos lançamentos. </p>
+                    <button><a target="_blank" href="https://wa.me/554891448517">CONTATO<br>Diretor Geral<br><span
+                                style="font-size: 12px; font-weight: bolder;">João
+                                Biasotto</span></a></button>
+
+                </aside>
+            </section>
+            <section class="">
+
+            </section>
+            <section class="final">
+                <div class="inspira">
+                    <img src="/imagensimpar/inspira.jpg" alt="">
+                </div>
+
+
+            </section>
+            <footer>
+                <div class="footerContainer">
+                    <div class="logoimparfooter">
+                        <img width="100px" src="/imagensimpar/bgbgbg.webp" alt="logoimpar">
+                    </div>
+                    <div class="atendimento">
+                        <h6>Horário de Atendimento: </h6>
+                        <ul>
+                            <li>Segunda à quinta das 08:00h as 11:30h e das 17:00h as 22:30h</li>
+                            <li>Sextas das 17:00h as 21:30h</li>
+                            <li>Sábado das 09:00h as 12:00h</li>
+
+                        </ul>
+                    </div>
+                    <div class="recesso">
+                        <h6>COMUNICADO DE FÉRIAS</h6>
+                        <p>Estaremos em recesso entre os dias <em>15/12/2025</em> e <em>11/01/2016</em>.<br> Voltamos
+                            com
+                            nossas atividades no dia <em>12/01/2026</em></p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+
+</body>
+
+
+<script>
+
+    const reveals = document.querySelectorAll('.reveal');
+
+    window.addEventListener('scroll', () => {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        reveals.forEach(el => {
+            const elTop = el.getBoundingClientRect().top;
+
+            if (elTop < triggerBottom) {
+                el.classList.add('active');
+            } else {
+                el.classList.remove('active');
+            }
+        });
+    });
+
+    window.addEventListener('load', () => {
+        reveals.forEach(el => {
+            const elTop = el.getBoundingClientRect().top;
+            if (elTop < window.innerHeight * 0.85) {
+                el.classList.add('active');
+            }
+        });
+    });
+
+    // ----------------------------------------------------//
+    const btnHorarios = document.getElementById('btnHorarios')
+    const diasContainer = document.getElementById('dias')
+    const dias = document.querySelectorAll('.dia-semana') // corrigido
+    const prev = document.getElementById('prevDia') // corrigido
+    const next = document.getElementById('nextDia') // corrigido
+    let currentDia = 0;
+
+    function showDia(index) {
+        dias.forEach((dia, i) => dia.classList.toggle('active', i === index))
+    }
+
+    btnHorarios.addEventListener('click', () => {
+        diasContainer.style.display = 'flex';
+        showDia(currentDia);
+    });
+
+    prev.addEventListener('click', () => {
+        currentDia = (currentDia - 1 + dias.length) % dias.length;
+        showDia(currentDia);
+    });
+
+    next.addEventListener('click', () => {
+        currentDia = (currentDia + 1) % dias.length;
+        showDia(currentDia);
+
+    });
+    document.addEventListener('click', (e) => {
+        if (!diasContainer.contains(e.target) && e.target !== btnHorarios) {
+            diasContainer.style.display = 'none';
+        }
+    });
+
+    // ------------------------------------------------------ //
+
+    // CARDS INTERACTION. //
+    // Seleciona o container que contém todos os cards
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const containerCards = document.querySelector('.cardsContainer');
+
+        let speed = 0.6; // velocidade constante
+        let animationId;
+
+        // duplica os cards para criar loop infinito
+        containerCards.innerHTML += containerCards.innerHTML;
+
+        function slide() {
+            containerCards.scrollLeft += speed;
+
+            // quando chegar na metade, volta para o início
+            if (containerCards.scrollLeft >= containerCards.scrollWidth / 2) {
+                containerCards.scrollLeft = 0;
+            }
+
+            animationId = requestAnimationFrame(slide);
+        }
+
+        // inicia automaticamente
+        slide();
+
+
+
+    });
+    // JS mobile toggle para telas <= 800px
+    (() => {
+        const mobileWidth = 800;
+
+        function enableMobileToggles() {
+            const toggles = document.querySelectorAll('[data-toggle]');
+            toggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    // Alterna a classe 'active' no próprio elemento
+                    toggle.classList.toggle('active');
+                });
+            });
+        }
+
+        // Inicializa se a tela estiver no tamanho mobile
+        function init() {
+            if (window.innerWidth <= mobileWidth) {
+                enableMobileToggles();
+            }
+        }
+
+        // Dispara no carregamento
+        window.addEventListener('load', init);
+
+        // Dispara ao redimensionar a tela, evitando múltiplos listeners
+        window.addEventListener('resize', () => {
+            // Só adiciona novamente se passar de 800px para <=800px
+            if (window.innerWidth <= mobileWidth && !document.body.classList.contains('mobile-init')) {
+                enableMobileToggles();
+                document.body.classList.add('mobile-init'); // evita múltiplos listeners
+            } else if (window.innerWidth > mobileWidth && document.body.classList.contains('mobile-init')) {
+                // Remove a classe 'active' de todos os toggles ao sair do mobile
+                document.querySelectorAll('[data-toggle].active').forEach(el => el.classList.remove('active'));
+                document.body.classList.remove('mobile-init');
+            }
+        });
+    })();
+
+
+
+
+
+    //  const containerCards = document.querySelector('.cardsContainer');
+    //     let animationId;
+    //     let speed = 1;
+    //     let isHovering = false;
+
+
+    //     containerCards.innerHTML += containerCards.innerHTML;
+
+    //     function slide() {
+    //         if (!isHovering) return;
+    //         containerCards.scrollLeft += speed;
+    //         if (containerCards.scrollLeft >= containerCards.scrollWidth / 2) {
+    //             containerCards.scrollLeft = 0;
+    //         }
+    //         animationId = requestAnimationFrame(slide);
+    //     }
+    //     containerCards.addEventListener('mouseenter', () => {
+    //         isHovering = true;
+    //         slide();
+    //     });
+    //     containerCards.addEventListener('mouseleave', () => {
+    //         isHovering = false;
+    //         cancelAnimationFrame(animationId);
+    //     });
+
+
+
+
+</script>
+
+</html>
